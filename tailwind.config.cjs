@@ -1,0 +1,15 @@
+const seekerPlugin = require('./tailwind-plugin/seeker.cjs');
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('daisyui'),
+    seekerPlugin
+  ],
+}
